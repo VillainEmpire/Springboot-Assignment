@@ -23,15 +23,12 @@ public class CountryApplication{
 				BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
 				StringBuffer jsonResponseData = new StringBuffer();
 				String readLine = null;
-
 				while ((readLine = in.readLine()) != null) {
 					jsonResponseData.append(readLine);
 				}
 				in.close();
 				JSONObject masterData =  new JSONObject(jsonResponseData.toString());
 				//JSONObject weather = (JSONObject) masterData.get("current_weather");
-
-
 				System.out.println("country_details : " +masterData);
 			}
 			else{
