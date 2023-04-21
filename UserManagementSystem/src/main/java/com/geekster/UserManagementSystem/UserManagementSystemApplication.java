@@ -1,13 +1,13 @@
-package com.geekster.SpringAnnotations;
+package com.geekster.UserManagementSystem;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SpringAnnotationsApplication {
+public class UserManagementSystemApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringAnnotationsApplication.class, args);
+		SpringApplication.run(UserManagementSystemApplication.class, args);
 	}
 
 }
